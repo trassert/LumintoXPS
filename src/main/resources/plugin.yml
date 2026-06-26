@@ -1,8 +1,8 @@
 name: XPStore
-version: '1.0.0'
+version: ${project.version}
 main: com.jolly.xPStore.XPStore
-api-version: '1.21'
-authors: [Jolly]
+api-version: "26.1.2"
+authors: [Jolly, trassert]
 folia-supported: true
 description: Allows XP storing into glassbottle
 permissions:
