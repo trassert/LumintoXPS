@@ -1,6 +1,5 @@
 package com.jolly.xPStore;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
@@ -52,8 +51,13 @@ public final class XPStore extends JavaPlugin implements Listener {
         player.giveExp(-(bottlesToMake * EXPERIENCE_COST));
         player.getInventory().removeItem(new ItemStack(Material.GLASS_BOTTLE, bottlesToMake));
         player.getInventory().addItem(new ItemStack(Material.EXPERIENCE_BOTTLE, bottlesToMake));
-        player.getWorld().playSound(player.getLocation(), Sound.ITEM_BOTTLE_FILL_DRAGONBREATH, SOUND_VOLUME,
-                SOUND_PITCH);
+        player.getWorld()
+            .playSound(
+                player.getLocation(),
+                Sound.ITEM_BOTTLE_FILL_DRAGONBREATH,
+                SOUND_VOLUME,
+                SOUND_PITCH
+            );
     }
 
     private int getTotalExperience(Player player) {
