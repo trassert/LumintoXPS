@@ -4,7 +4,7 @@
 
     <groupId>com.jolly</groupId>
     <artifactId>xPStore</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,7 +50,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.15.0</version>
+                <version>3.16.0</version>
                 <configuration>
                     <source>25</source>
                     <target>25</target>
